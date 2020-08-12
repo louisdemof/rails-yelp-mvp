@@ -1,6 +1,6 @@
 # CLASS FOR YOUR RESTAURANT
 class Restaurant < ApplicationRecord
-  CATEGORY = ["chinese", "italian", "japanese", "french", "belgian"].freeze
+  CATEGORY = ["Chinese 🇨🇳", "Italian 🇮🇹", "Japanese 🇯🇵", "French 🇫🇷", "Belgian 🇧🇪"].freeze
   has_many :reviews, dependent: :destroy
   validates :name, length: { in: 2..26 }
   validates :name, uniqueness: true
